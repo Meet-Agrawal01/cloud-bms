@@ -75,7 +75,7 @@ const FleetMap = () => {
         <div className="mt-4 flex flex-wrap gap-4 text-xs">
           <div className="flex items-center space-x-2">
             <Circle className="w-3 h-3 text-green-500 fill-current" />
-            <span className="text-slate-600">Good (>50%)</span>
+            <span className="text-slate-600">Good (&gt;50%)</span>
           </div>
           <div className="flex items-center space-x-2">
             <Circle className="w-3 h-3 text-yellow-500 fill-current" />
@@ -83,7 +83,7 @@ const FleetMap = () => {
           </div>
           <div className="flex items-center space-x-2">
             <Circle className="w-3 h-3 text-red-500 fill-current" />
-            <span className="text-slate-600">Critical (<30%)</span>
+            <span className="text-slate-600">Critical (&lt;30%)</span>
           </div>
         </div>
       </CardContent>
