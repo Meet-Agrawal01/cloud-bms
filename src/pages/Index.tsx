@@ -23,7 +23,7 @@ const Index = () => {
       <main className="container mx-auto px-4 py-6 space-y-6">
         <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
           <TabsList className="grid w-full grid-cols-4">
-            <TabsTrigger value="overview">Overview</TabsTrigger>
+            <TabsTrigger value="overview">Summary</TabsTrigger>
             <TabsTrigger value="fleet">Fleet Details</TabsTrigger>
             <TabsTrigger value="alerts">Alert Center</TabsTrigger>
             <TabsTrigger value="ota">OTA Updates</TabsTrigger>
