@@ -1,0 +1,17 @@
+name: Call TCU API on dashboard commit
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  call-api:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Hit TCU Endpoint
+        run: |
+          curl --fail --silent --show-error \
+               -X GET "https://bgn3477m-4000.inc1.devtunnels.ms/pull-code" \
+               -H "Content-Type: application/json"
