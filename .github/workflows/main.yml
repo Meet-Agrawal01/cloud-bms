@@ -13,5 +13,5 @@ jobs:
       - name: Hit TCU Endpoint
         run: |
           curl --fail --silent --show-error \
-               -X GET "https://bgn3477m-4000.inc1.devtunnels.ms/pull-code" \
+               -X GET "https://6lfl815g-4000.inc1.devtunnels.ms/pull-code" \
                -H "Content-Type: application/json"
