@@ -30,7 +30,7 @@ const Navbar = ({ selectedFleet, onFleetChange }: NavbarProps) => {
             <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-sm">EV</span>
             </div>
-            <span className="text-xl font-semibold text-slate-800">Cloud BMS Dashboard</span>
+            <span className="text-xl font-semibold text-slate-800">BMS Dashboard</span>
           </div>
           
           <DropdownMenu>
