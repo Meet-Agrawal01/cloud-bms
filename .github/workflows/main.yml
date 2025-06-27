@@ -37,12 +37,12 @@ jobs:
         run: docker build -t myapp:latest .
 
       - name: Login to Docker Hub
-        run: echo "${{ secrets.DOCKER_PASS }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
+        run: echo "${{ secrets.DOCKER_PASS }}" | docker login -u "${{ secrets.DOCKER_USER }}" --password-stdin
 
       - name: Push to Docker Hub
         run: |
-          docker tag myapp:latest ${{ secrets.DOCKER_USERNAME }}/myapp:latest
-          docker push ${{ secrets.DOCKER_USERNAME }}/myapp:latest
+          docker tag myapp:latest ${{ secrets.DOCKER_USER }}/myapp:latest
+          docker push ${{ secrets.DOCKER_USER }}/myapp:latest
 
       - name: Hit TCU Endpoint
         run: |
